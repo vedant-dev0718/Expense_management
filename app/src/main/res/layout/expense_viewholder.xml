@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/gas_pump_solid_1" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:text="Fuel"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:backgroundTint="#ffecb5"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ll_bg_curve"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:text="Pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#C0765C11" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#badbcc"
+                        android:background="@drawable/ll_bg_curve"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                            android:text="Approved"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="@color/green"
+                            android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:text="Expense Date"
+                            android:textColor="#757575"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/expected_date"
+                            android:layout_width="match_parent"
+                            android:text="07/09/2023"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:text="Applied Date"
+                            android:textColor="#757575"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/applied_date"
+                            android:layout_width="match_parent"
+                            android:text="07/09/2023"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+
+                            android:layout_width="match_parent"
+                            android:text="Submitted Amount"
+                            android:textColor="#757575"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/submitted_amount"
+                            android:layout_width="match_parent"
+                            android:text="₹4500"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+
+                            android:layout_width="match_parent"
+                            android:text="Approved Amount"
+                            android:textColor="#757575"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/approved_amount"
+                            android:layout_width="match_parent"
+                            android:text="₹4500"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:text="Description"
+                        android:textColor="#757575"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:text="Lorem ipsum dolor sit amet consectetur."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/delete" />
+
+                <ImageView
+                        android:id="@+id/edit_button"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/edit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
